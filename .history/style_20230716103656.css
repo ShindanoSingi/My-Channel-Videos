@@ -76,6 +76,7 @@ input:focus{
 }
 
 .input-button-container{
+    width: 100%;
     display: flex;
     align-items: center;
     border: 5px solid var(--light-gray);
@@ -102,7 +103,7 @@ input:focus{
 }
 
 .div-checkbox-container{
-    width: 100%;
+    /* width: 100%; */
     height: auto;
     display: flex;
     justify-content: space-between;

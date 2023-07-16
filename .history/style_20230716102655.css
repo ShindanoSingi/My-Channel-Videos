@@ -27,7 +27,7 @@ body{
     font-size: 3rem;
 }
 
-div.top-div{
+.top-div{
     width: 100%;
     background: var(--background-color);
     display: grid;
@@ -35,6 +35,7 @@ div.top-div{
     height: 6rem;
     gap: 1rem;
     border-radius: var(--border-radius);
+    flex: 1;
     padding: 1rem 0;
     margin-bottom: 1.3rem;
 }
@@ -45,7 +46,7 @@ input, .submit-button{
 }
 
 .input-field{
-    /* width: 100%; */
+    width: 100%;
     display: inline-block;
     border-radius: var(--input-border-radius) 0 0 var(--input-border-radius); 
     padding: 0.2rem 1rem;
@@ -61,6 +62,7 @@ input:focus{
 }
 
 .submit-button{
+    width: 30%;
     padding: 0 0.4rem;
     display: inline-block;
     cursor: pointer;
@@ -76,6 +78,7 @@ input:focus{
 }
 
 .input-button-container{
+    width: 65%;
     display: flex;
     align-items: center;
     border: 5px solid var(--light-gray);
@@ -85,12 +88,12 @@ input:focus{
     /* display: none; */
 }
 
-/* .label{
+.label{
     font-size: 1rem;
     width: 50%;
     display: flex;
     justify-self: center;
-} */
+}
 
 .checkbox{
     transform: scale(1.2);
@@ -102,7 +105,7 @@ input:focus{
 }
 
 .div-checkbox-container{
-    width: 100%;
+    /* width: 70%; */
     height: auto;
     display: flex;
     justify-content: space-between;

@@ -45,7 +45,7 @@ input, .submit-button{
 }
 
 .input-field{
-    /* width: 100%; */
+    width: 100%;
     display: inline-block;
     border-radius: var(--input-border-radius) 0 0 var(--input-border-radius); 
     padding: 0.2rem 1rem;
@@ -76,6 +76,7 @@ input:focus{
 }
 
 .input-button-container{
+    width: 100%;
     display: flex;
     align-items: center;
     border: 5px solid var(--light-gray);

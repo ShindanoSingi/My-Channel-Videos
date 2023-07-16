@@ -76,6 +76,7 @@ input:focus{
 }
 
 .input-button-container{
+    width: 100%;
     display: flex;
     align-items: center;
     border: 5px solid var(--light-gray);
