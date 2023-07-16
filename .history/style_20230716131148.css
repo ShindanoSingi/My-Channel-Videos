@@ -40,7 +40,7 @@ body{
     border-radius: var(--border-radius);
     padding: 1rem 0;
     margin-bottom: 1.3rem;
-    margin-top: 25%;
+    margin-top: 20%;
 }
 
 /* Input field */
@@ -127,9 +127,8 @@ div.text{
     padding: 0 2rem;
     width: 80%;
     margin-top: 1.3rem;
-    max-height: 55vh;
+    max-height: 60vh;
     overflow-y: scroll;
-    padding-bottom: 2%;
 }
  
 .container{

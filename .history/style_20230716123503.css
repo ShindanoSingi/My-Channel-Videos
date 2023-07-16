@@ -1,7 +1,7 @@
 :root{
     --gray-color: #545454;
     --background-color: #F8F7F6;
-    --general-font: 1.2rem;
+    --general-font: 1.4rem;
     --light-blue:#1E90FF;
     --light-gray:#DCDCDC;
     --border-radius: 10px;
@@ -40,7 +40,7 @@ body{
     border-radius: var(--border-radius);
     padding: 1rem 0;
     margin-bottom: 1.3rem;
-    margin-top: 25%;
+    /* width: 80%; */
 }
 
 /* Input field */
@@ -49,7 +49,7 @@ input, .submit-button{
 }
 
 .input-field{
-    width: 65%;
+    width: 60%;
     display: inline-block;
     border-radius: var(--input-border-radius) 0 0 var(--input-border-radius); 
     padding: 0.2rem 1rem;
@@ -80,7 +80,7 @@ input:focus{
 }
 
 .input-button-container{
-    width: 78%;
+    width: 80%;
     display: flex;
     align-items: center;
     border: 5px solid var(--light-gray);
@@ -90,23 +90,20 @@ input:focus{
     /* display: none; */
 }
 
-div.text{
+/* .label{
     font-size: 1rem;
-    width: 70%;
-    overflow: scroll;
-    padding: 1rem;
-}
+    width: 50%;
+    display: flex;
+    justify-self: center;
+} */
 
 .checkbox{
     transform: scale(1.2);
 }
 
 .check-mark{
-    transform: translate(-1rem, -0.2rem);
-}
-
-.checkbox-icon{
-    display: flex;
+    position: absolute;
+    transform: translateX(-1rem);
 }
 
 .div-checkbox-container{
@@ -124,19 +121,16 @@ div.text{
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    padding: 0 2rem;
-    width: 80%;
-    margin-top: 1.3rem;
-    max-height: 55vh;
-    overflow-y: scroll;
-    padding-bottom: 2%;
+    /* padding: 0 2rem; */
+    /* width: 100vw; */
 }
  
 .container{
-    height: 100svh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* place-content: center; */
 }
