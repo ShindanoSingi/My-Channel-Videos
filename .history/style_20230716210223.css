@@ -40,7 +40,7 @@ body{
     border-radius: var(--border-radius);
     padding: 1rem 0;
     margin-bottom: 1.3rem;
-    margin-top: -17rem;
+    margin-top: 25%;
 }
 
 /* Input field */
