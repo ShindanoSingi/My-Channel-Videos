@@ -45,14 +45,36 @@ button.addEventListener("click", function () {
     inputValue.value = ''
 });
 
-// const showCheckMark = () => {
-//     let checkMark = document.getElementById('check-mark');
-//     checkMark.style.zIndex = 1;
-//     console.log("Lol")
-// }
+// Show check mark
+const showCheckMark = () => {
+    console.log('show check mark')
+    let checkMark = document.getElementById('check-mark');
+    checkMark.style.display = "block";
+    checkMark.style.transform = 'scale(1.2)';
+    checkMark.style.transform = 'scale(1.1)';
+    checkMark.style.transform = 'scale(1)';
+    checkMark.style.transform = 'scale(0.9)';
+};
 
-// let checkBoxIcon = document.getElementById('checkbox-icon');
-// checkBoxIcon.addEventListener('click', (event) => {
-//     showCheckMark()
-// })
+// Hide check mark
+const hideCheckMark = () => {
+    let checkMark = document.getElementById('check-mark');
+    checkMark.style.display = "none";
+};
+
+// Strike through
+let text = document.getElementById('text');
+const strikeThrough = () => {
+    text.style.textDecoration = "line-through";
+}
+
+// Check mark
+let checkbox = document.getElementById('checkbox-icon');
+checkbox.addEventListener('click', function () {
+    showCheckMark();
+    strikeThrough();
+});
+
+
+
 

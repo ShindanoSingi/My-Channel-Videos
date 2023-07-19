@@ -93,6 +93,8 @@ div.text{
     width: 70%;
     overflow: scroll;
     padding: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .checkbox{
@@ -101,13 +103,16 @@ div.text{
     border: 2px solid var(--gray);
     border-radius: 5px;
     transform: scale(1.2);
+    margin-right: 1rem;
 }
 
 .check-mark{
     font-size: 2rem;
-    transform: scale(1.6);
+    transform: scale(0.9);
     color: var(--orange);
-    transform: translate(-1.2rem, -0.3rem);
+    position: absolute;
+    margin-bottom: 0.5rem;
+    display: none;
 }
 
 .checkbox-icon{
