@@ -112,7 +112,7 @@ div.text{
     color: var(--orange);
     position: absolute;
     margin-bottom: 0.5rem;
-    display: none;
+    /* display: none; */
 }
 
 .checkbox-icon{
