@@ -21,7 +21,12 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: fit-content;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    width: max-content;
+    height: -moz-max-content;
+    height: -webkit-max-content;
+    height: max-content;
     box-sizing: 0;
     margin: 0;
     padding: 0;
@@ -36,12 +41,17 @@ body{
     background: var(--background-color);
     display: grid;
     justify-items: center;
-    height: 6rem;
+    height: 8rem;
     gap: 1rem;
     border-radius: var(--border-radius);
     padding: 1rem 0;
     margin-bottom: 1.3rem;
-    margin-top: -17rem;
+    margin-top: -27rem;
+}
+
+.numTodos{
+    font-size: 1.5rem;
+    color: var(--gray-color);
 }
 
 /* Input field */
@@ -137,18 +147,45 @@ div.text{
     gap: 1.5rem;
     padding: 0 2rem;
     width: 80%;
-    max-height: 55vh;
+    max-height: 60%;
     overflow-y: scroll;
     position: absolute;
-    top: 46%;
+    top: 38%;
+    padding-bottom: 1rem;
 }
 
 .container{
-    height: 100vh;
+    min-height: 97.7vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 1.3rem;
+}
+
+/* Styles for portrait orientation on desktop */
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+  /* Your CSS styles for portrait orientation on desktop */
+}
+
+/* Styles for portrait orientation on tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+  /* Your CSS styles for portrait orientation on tablets */
+}
+
+
+/* Styles for landscape orientation on desktop */
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+
+}
+
+/* Styles for landscape orientation on tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+
+}
+
+/* Styles for landscape orientation on mobile devices */
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+
 }
