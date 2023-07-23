@@ -22,19 +22,25 @@ const strikeThrough = () => {
     text.style.textDecoration = "line-through";
 }
 
-const updateCounter = () => {
-    const parentDiv = document.getElementById('div-checkbox-containers-parent');
-    const childCount = parentDiv.children.length;
-    const updateCounter = childCount - 1;
-    console.log(updateCounter);
-    document.getElementById('counter').innerHTML = updateCounter;
-}
+// const updateCounter = () => {
+//     const parentDiv = document.getElementById('div-checkbox-containers-parent');
+//     const childCount = parentDiv.children.length;
+//     const updateCounter = childCount - 1;
+//     if (updateCounter >= 0) {
+//         document.getElementById('counter').innerHTML = updateCounter;
+//         return
+//     }
+//     else{
+//         document.getElementById('counter').innerHTML = 0;
+//     }
 
-const updateParentLength = () => {
-    const parentDiv = document.getElementById('div-checkbox-containers-parent');
-    const childCount = parentDiv.children.length;
-    document.getElementById('counter').innerHTML = updateCounter;
-}
+// }
+
+// const updateParentLength = () => {
+//     const parentDiv = document.getElementById('div-checkbox-containers-parent');
+//     const childCount = parentDiv.children.length;
+//     document.getElementById('counter').innerHTML = childCount;
+// }
 
 let button = document.getElementById("submit-button");
 button.addEventListener("click", function () {
@@ -70,8 +76,6 @@ button.addEventListener("click", function () {
     newDiv2.appendChild(newDiv3);
     newDiv2.appendChild(newDiv4);
 
-    updateParentLength();
-
     if (!inputValue.value) {
         alert("Please enter the text!")
         return
@@ -86,7 +90,6 @@ button.addEventListener("click", function () {
     // Counting the number of items
     const parentDiv = document.getElementById('div-checkbox-containers-parent');
     childCount = parentDiv.children.length;
-    console.log(childCount);
     // Assign the counter the tag with id="counter"
     document.getElementById('counter').innerHTML = childCount;
 });
@@ -99,7 +102,6 @@ parentContainer.addEventListener('click', function(event) {
   if (clickedElement) {
    clickedElement.parentElement.children[1].children[1].style.display = "block";
    clickedElement.parentElement.children[0].style.textDecoration = "line-through";
-    updateCounter();
   }
 });
 
